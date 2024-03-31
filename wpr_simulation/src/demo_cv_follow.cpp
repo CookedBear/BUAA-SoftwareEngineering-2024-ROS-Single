@@ -45,11 +45,11 @@
 using namespace cv;
 using namespace std;
 
-static int iLowH = 10;
-static int iHighH = 40;
+static int iLowH = 90;
+static int iHighH = 120;
 
-static int iLowS = 90; 
-static int iHighS = 255;
+static int iLowS = 25; 
+static int iHighS = 220;
 
 static int iLowV = 1;
 static int iHighV = 255;

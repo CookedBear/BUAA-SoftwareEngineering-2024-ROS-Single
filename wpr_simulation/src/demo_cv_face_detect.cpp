@@ -103,7 +103,7 @@ int main(int argc, char **argv)
     std::string strLoadFile;
     char const* home = getenv("HOME");
     strLoadFile = home;
-    strLoadFile += "/catkin_ws";    //工作空间目录
+    strLoadFile += "/ros/task1/BUAA-SoftwareEngineering-2024-ROS-Single";    /* 此处修改为你的工作空间目录/项目根目录 */
     strLoadFile += "/src/wpr_simulation/config/haarcascade_frontalface_alt.xml";
 
     bool res = face_cascade.load(strLoadFile);
