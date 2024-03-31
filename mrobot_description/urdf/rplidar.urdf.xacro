@@ -1,0 +1,27 @@
+<?xml version="1.0" ?>
+<xacro:macro name="rplidar"    xmlns:xacro="http://www.ros.org/wiki/xacro">
+    <link name="lidar_link">
+        <inertial>
+            <mass value="0.5" />
+            <origin xyz="0 0 0" />
+            <inertia ixx="0.01" ixy="0.0" ixz="0.0"
+                    iyy="0.01" iyz="0.0"
+                    izz="0.01" />
+        </inertial>
+        <visual>
+            <origin xyz=" 0 0 0.5 " rpy="0 0 0" />
+            <geometry>
+                <cylinder radius="0.2" length="1"/>
+            </geometry>
+            <material name="black">
+                <color rgba="0 0 0 0.9"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz=" 0 0 0.5 " rpy="0 0 0" />
+            <geometry>
+                <cylinder radius="0.2" length="1"/>
+            </geometry>
+        </collision>
+    </link>
+</xacro:macro>
