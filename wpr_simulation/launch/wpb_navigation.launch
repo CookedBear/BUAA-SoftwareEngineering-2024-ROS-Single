@@ -35,7 +35,7 @@
   <node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model" args="-file $(find wpr_simulation)/models/wpb_home.model -urdf -x -6.0 -y -0.5 -model wpb_home" />
 
   <!-- Run the map server -->
-  <node name="map_server" pkg="map_server" type="map_server" args="$(find wpr_simulation)/maps/map.yaml"/>
+  <node name="map_server" pkg="map_server" type="map_server" args="$(find wpr_simulation)/maps/map_hector.yaml"/>
 
   <!--- Run AMCL -->
   <include file="$(find wpb_home_tutorials)/nav_lidar/amcl_omni.launch" />
